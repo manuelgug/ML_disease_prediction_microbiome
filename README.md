@@ -32,26 +32,5 @@ Features were selected based on significance results obtained from the Kruskal-W
 
 For each disease, models were trained using the Pycaret library, and various metrics such as accuracy, AUC, recall, precision, F1-score, kappa, and MCC were used for evaluation. I select the best-performing model for each disease based on these evaluation metrics.
 
-Table 1. Diseases that yielded the best ML models.
-
-| Model                      | Accuracy | AUC    | Recall | Prec. | F1    | Kappa | MCC   | TT (Sec) | Disease                                  |
-|----------------------------|----------|--------|--------|-------|-------|-------|-------|----------|------------------------------------------|
-| Ada Boost Classifier       | 0.9994   | 0.9999 | 0.9467 | 1.0000| 0.9705| 0.9702| 0.9717| 0.792    | Anorexia                                 |
-| Extreme Gradient Boosting | 0.9973   | 0.9998 | 0.8875 | 0.9607| 0.9207| 0.9193| 0.9211| 2.730    | CDI                                      |
-| Extreme Gradient Boosting | 0.9853   | 0.9959 | 0.8034 | 0.9603| 0.8744| 0.8666| 0.8708| 6.404    | CRC                                      |
-| Extreme Gradient Boosting | 0.9932   | 0.9980 | 0.8030 | 0.9633| 0.8729| 0.8695| 0.8748| 3.987    | Clostridium difficile colitis            |
-| Extreme Gradient Boosting | 0.9892   | 0.9958 | 0.6758 | 0.9302| 0.7806| 0.7753| 0.7868| 3.912    | Colonic Diseases                         |
-| Extreme Gradient Boosting | 0.9955   | 0.9978 | 0.8824 | 0.9777| 0.9261| 0.9238| 0.9259| 4.001    | Colorectal Neoplasms                    |
-| Extreme Gradient Boosting | 0.9980   | 0.9997 | 0.9344 | 0.9866| 0.9592| 0.9581| 0.9588| 2.598    | Hematologic Neoplasms                   |
-| Extreme Gradient Boosting | 0.9943   | 0.9992 | 0.9769 | 0.9615| 0.9691| 0.9659| 0.9660| 1.093    | Infant, Premature                        |
-| Extreme Gradient Boosting | 0.9983   | 0.9990 | 0.8161 | 0.9690| 0.8829| 0.8820| 0.8869| 1.498    | Inflamatory Bowel Disease                |
-| Extreme Gradient Boosting | 0.9969   | 0.9993 | 0.9099 | 0.9471| 0.9266| 0.9250| 0.9260| 2.460    | Liver Cirrhosis                          |
-| Extreme Gradient Boosting | 0.9759   | 0.9820 | 0.7175 | 0.8725| 0.7859| 0.7733| 0.7783| 5.347    | Obesity                                  |
-| Extreme Gradient Boosting | 0.9945   | 0.9994 | 0.9228 | 0.9694| 0.9444| 0.9416| 0.9425| 5.036    | Pouchitis                                |
-| Ada Boost Classifier       | 0.9990   | 1.0000 | 0.9760 | 0.9886| 0.9817| 0.9812| 0.9815| 0.696    | Precursor Cell Lymphoblastic Leukemia-Lymphoma |
-| Extra Trees Classifier     | 0.9947   | 0.9974 | 0.6250 | 0.9900| 0.7580| 0.7555| 0.7800| 0.332    | Small adenoma                            |
-| Random Forest Classifier   | 0.9999   | 1.0000 | 0.9963 | 1.0000| 0.9981| 0.9981| 0.9981| 0.255    | Stomach Neoplasms                       |
-| Extreme Gradient Boosting | 0.9945   | 0.9974 | 0.6255 | 0.8907| 0.7193| 0.7168| 0.7354| 1.459    | Uveomeningoencephalitic Syndrome         |
-
 ![models](https://github.com/manuelgug/ML_disease_prediction_microbiome/blob/main/imgs/image2.png)
-Fig 3. Metrics for best performing models across all diseases
+Fig 3. Metrics for best performing models across all diseases. Notably, Extreme Gradient Boosting (Anorexia, CDI, CRC, Clostridium difficile colitis, Colonic Diseases, Colorectal Neoplasms, Hematologic Neoplasms, Infant, Premature, Inflamatory Bowel Disease, Liver Cirrhosis, Obesity, Pouchitis, Small adenoma, Uveomeningoencephalitic Syndrome) demonstrates strong performance across multiple diseases, while Random Forest Classifier (Stomach Neoplasms) achieves exceptional accuracy.
