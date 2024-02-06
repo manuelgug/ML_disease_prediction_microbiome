@@ -18,6 +18,12 @@ Next, I cleaned the metadata associated with the samples to remove any irrelevan
 
 I then conducted exploratory data analysis (EDA) to gain insights into the distribution of phenotypes (disease categories) and perform dimensionality reduction using Principal Component Analysis (PCA) to visualize patterns in the data.
 
+![pca](https://github.com/manuelgug/ML_disease_prediction_microbiome/blob/main/imgs/image3.png)
+Fig 1. Sample counts of genotypes that were analyzed.
+
+![pca](https://github.com/manuelgug/ML_disease_prediction_microbiome/blob/main/imgs/image1.png)
+Fig 2. PCA of microbiomes from healthy and not healthy samples.
+
 ### 3. Feature Selection
 
 Features were selected based on significance results obtained from the Kruskal-Wallis test; if a feature was found significantly different between the healthy and disease categories, it was deemed as important and preserved for model training.
@@ -26,7 +32,7 @@ Features were selected based on significance results obtained from the Kruskal-W
 
 For each disease, models were trained using the Pycaret library, and various metrics such as accuracy, AUC, recall, precision, F1-score, kappa, and MCC were used for evaluation. I select the best-performing model for each disease based on these evaluation metrics.
 
-Table 1. Diseases that yielded good ML models.
+Table 1. Diseases that yielded the best ML models.
 
 | Model                      | Accuracy | AUC    | Recall | Prec. | F1    | Kappa | MCC   | TT (Sec) | Disease                                  |
 |----------------------------|----------|--------|--------|-------|-------|-------|-------|----------|------------------------------------------|
@@ -46,3 +52,6 @@ Table 1. Diseases that yielded good ML models.
 | Extra Trees Classifier     | 0.9947   | 0.9974 | 0.6250 | 0.9900| 0.7580| 0.7555| 0.7800| 0.332    | Small adenoma                            |
 | Random Forest Classifier   | 0.9999   | 1.0000 | 0.9963 | 1.0000| 0.9981| 0.9981| 0.9981| 0.255    | Stomach Neoplasms                       |
 | Extreme Gradient Boosting | 0.9945   | 0.9974 | 0.6255 | 0.8907| 0.7193| 0.7168| 0.7354| 1.459    | Uveomeningoencephalitic Syndrome         |
+
+![models](https://github.com/manuelgug/ML_disease_prediction_microbiome/blob/main/imgs/image2.png)
+Fig 3. Metrics for best performing models across all diseases
