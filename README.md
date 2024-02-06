@@ -22,7 +22,7 @@ I then conducted exploratory data analysis (EDA) to gain insights into the distr
 
 Features were selected based on significance results obtained from the Kruskal-Wallis test; if a feature was found significantly different between the healthy and disease categories, it was deemed as important and preserved for model training.
 
-### 5. Machine Learning Model Training, Evaluation and Selection
+### 4. Machine Learning Model Training, Evaluation and Selection
 
 For each disease, models were trained using the Pycaret library, and various metrics such as accuracy, AUC, recall, precision, F1-score, kappa, and MCC were used for evaluation. I select the best-performing model for each disease based on these evaluation metrics.
 
